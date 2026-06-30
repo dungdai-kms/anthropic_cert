@@ -27,6 +27,8 @@ Bộ notebook học theo khóa **[Claude with the Anthropic API](https://anthrop
 | Notebook | Giải thích phần khó nhất |
 |---|---|
 | [`example_agentic_loop_explained.ipynb`](example_agentic_loop_explained.ipynb) | **"Chụp X-quang" Vòng lặp Agentic** — phần nâng cao & dễ rối nhất khóa học. In ra chính xác `messages` phình to thế nào qua từng bước; giải thích `tool_use_id`, vì sao gửi lại `response.content`, vì sao kết quả công cụ nằm trong message `user`. **Nên đọc sau bài 4 (Tool Use).** |
+| [`example_tool_selection_logic.ipynb`](example_tool_selection_logic.ipynb) | **Logic Claude CHỌN công cụ nào** — thí nghiệm cho thấy `description` chính là "bộ não" quyết định: mô tả rõ → chọn đúng, mô tả mơ hồ → chọn sai/quên. Bao gồm gọi song song nhiều tool & ép buộc bằng `tool_choice`. **Đi cặp với file vòng lặp ở trên.** |
+| [`example_sending_results_and_multiturn.ipynb`](example_sending_results_and_multiturn.ipynb) | **Sending tool results + Multi-turn với công cụ** — bám đúng 2 mục khóa học. Phần A: trả 1 kết quả đúng 3 quy tắc (append assistant → tool_result user → khớp `tool_use_id`). Phần B: demo 3 lượt khách hỏi liên tiếp ("thế còn...", "chỗ nào nóng hơn"), in lịch sử phình to → thấy Claude **nhớ ngữ cảnh** thế nào. |
 
 > 📄 Ngoài ra còn 2 file `.py` đầu tiên (`accessing_claude_api.py`, `prompt_evaluation.py`) — bản script gốc trước khi chuyển sang notebook.
 
